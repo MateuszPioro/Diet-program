@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+</head>
+<body>
+<h2>Add product:</h2>
+<h5>The content of macronutrients in 100 g / ml of the product</h5>
+<form action="#" th:action="@{/product/add}" method="post" th:object="${new_Product}">
+    <div>
+        <label>
+            Product Name:
+            <input type="text" placeholder="enter the product name" th:field="*{name}">
+        </label>
+    </div>
+<div>
+    <label>
+        Protein:
+        <input type="number" placeholder="enter amount of protein" th:field="*{proteinAmount}">
+    </label>
+</div>
+    <div>
+        <label>
+            Fat:
+            <input type="number" placeholder="enter amount of fat" th:field="*{fatAmount}">
+        </label>
+    </div>
+    <div>
+        <label>
+            Carbohydrates:
+            <input type="number" placeholder="enter amount of carbohydrates" th:field="*{carbAmount}">
+        </label>
+    </div>
+<button type="submit">Save</button>
+</form>
+
+<form action="http://localhost:8080/journal/list">
+    <button type="submit">Journal List</button>
+</form>
+
+</body>
+</html>

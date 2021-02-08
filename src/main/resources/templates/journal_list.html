@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Diet Journal</title>
+    <h1>Diet Journal:</h1>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+<form action="#" th:action="@{/journal/add}" method="post" th:object="${journal_form}">
+    <div class="form-group">
+        <label for="weightInput">Product Weight: </label>
+        <input name="weightInput" id="weightInput" th:field="*{weight}"
+               type="number" class="form-control"
+               placeholder="Waga produktu w gramach" required/>
+    </div>
+    <label for="productSelect">Product: </label>
+    <select class="form-control" id="productSelect" name="productSelect" th:field="*{productId}" required>
+        <option selected style="display:none" th:value="${null}"> -- wybierz produkt -- </option>
+        <option
+                th:each="product : ${availableProducts}"
+                th:value="${product.getId()}"
+                th:text="${product.getName()}"></option>
+    </select>
+    <button type="submit">Save to Journal</button>
+</form>
+<table class="table table-dark">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Protein</th>
+        <th>Fat</th>
+        <th>Carbohydrates</th>
+        <th>Weight</th>
+        <th>Calories</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="journal : ${journalList}">
+        <td th:text="${journal.getProduct().getName()}"></td>
+        <td th:text="${journal.getTotalProtein()}"></td>
+        <td th:text="${journal.getTotalFat()}"></td>
+        <td th:text="${journal.getTotalCarb()}"></td>
+        <td th:text="${journal.getWeight()}"></td>
+        <td th:text="${journal.getTotalCalories()}"></td>
+
+<!--           <a th:href="@{/journal/delete(productId=${journal.id})}" >Delete</a>-->
+
+
+    </tr>
+    </tbody>
+
+</table>
+<form action="http://localhost:8080/product/add">
+    <button type="submit"><-Back</button>
+</form>
+
+</body>
+</html>
