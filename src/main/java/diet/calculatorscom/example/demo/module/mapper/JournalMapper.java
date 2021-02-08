@@ -1,7 +1,8 @@
 package diet.calculatorscom.example.demo.module.mapper;
 
-import diet.calculator.com.example.diet_calculator.module.product.model.dto.JournalDto;
-import diet.calculator.com.example.diet_calculator.module.product.model.entity.JournalEntryEntity;
+ ;
+ import diet.calculatorscom.example.demo.module.product.model.dto.JournalDto;
+ import diet.calculatorscom.example.demo.module.product.model.entity.JournalEntryEntity;
 
 public class JournalMapper {
 

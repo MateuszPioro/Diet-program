@@ -1,13 +1,13 @@
 package diet.calculatorscom.example.demo.module.product.service;
 
 
-import diet.calculator.com.example.diet_calculator.module.mapper.JournalMapper;
-import diet.calculator.com.example.diet_calculator.module.product.model.dto.JournalDto;
-import diet.calculator.com.example.diet_calculator.module.product.model.dto.JournalForm;
-import diet.calculator.com.example.diet_calculator.module.product.model.entity.JournalEntryEntity;
-import diet.calculator.com.example.diet_calculator.module.product.model.entity.ProductEntity;
-import diet.calculator.com.example.diet_calculator.repository.JournalRepository;
-import diet.calculator.com.example.diet_calculator.repository.ProductRepository;
+import diet.calculatorscom.example.demo.module.mapper.JournalMapper;
+import diet.calculatorscom.example.demo.module.product.model.dto.JournalDto;
+import diet.calculatorscom.example.demo.module.product.model.dto.JournalForm;
+import diet.calculatorscom.example.demo.module.product.model.entity.JournalEntryEntity;
+import diet.calculatorscom.example.demo.module.product.model.entity.ProductEntity;
+import diet.calculatorscom.example.demo.repository.JournalRepository;
+import diet.calculatorscom.example.demo.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

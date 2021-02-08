@@ -5,8 +5,9 @@ import com.fatsecret.platform.model.Food;
 import com.fatsecret.platform.model.Serving;
 import com.fatsecret.platform.services.FatsecretService;
 import com.fatsecret.platform.services.Response;
-import diet.calculator.com.example.diet_calculator.module.product.model.entity.ProductEntity;
-import diet.calculator.com.example.diet_calculator.repository.ProductRepository;
+
+import diet.calculatorscom.example.demo.module.product.model.entity.ProductEntity;
+import diet.calculatorscom.example.demo.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;

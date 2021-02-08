@@ -1,8 +1,9 @@
 package diet.calculatorscom.example.demo.module.product.controller;
 
 
-import diet.calculator.com.example.diet_calculator.module.product.model.dto.ProductDto;
-import diet.calculator.com.example.diet_calculator.module.product.service.ProductService;
+
+import diet.calculatorscom.example.demo.module.product.model.dto.ProductDto;
+import diet.calculatorscom.example.demo.module.product.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Controller;

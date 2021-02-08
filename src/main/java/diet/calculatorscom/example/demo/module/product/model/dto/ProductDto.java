@@ -1,6 +1,7 @@
 package diet.calculatorscom.example.demo.module.product.model.dto;
 
-import diet.calculator.com.example.diet_calculator.module.product.model.Macronutrients;
+
+import diet.calculatorscom.example.demo.module.product.model.Macronutrients;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

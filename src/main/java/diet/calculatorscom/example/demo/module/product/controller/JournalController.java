@@ -1,10 +1,10 @@
 package diet.calculatorscom.example.demo.module.product.controller;
 
 
-import diet.calculator.com.example.diet_calculator.module.product.model.dto.JournalDto;
-import diet.calculator.com.example.diet_calculator.module.product.model.dto.JournalForm;
-import diet.calculator.com.example.diet_calculator.module.product.service.JournalService;
-import diet.calculator.com.example.diet_calculator.module.product.service.ProductService;
+import diet.calculatorscom.example.demo.module.product.model.dto.JournalDto;
+import diet.calculatorscom.example.demo.module.product.model.dto.JournalForm;
+import diet.calculatorscom.example.demo.module.product.service.JournalService;
+import diet.calculatorscom.example.demo.module.product.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

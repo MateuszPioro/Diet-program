@@ -1,9 +1,9 @@
 package diet.calculatorscom.example.demo.module.product.service;
 
-import diet.calculator.com.example.diet_calculator.module.mapper.ProductMapper;
-import diet.calculator.com.example.diet_calculator.module.product.model.dto.ProductDto;
-import diet.calculator.com.example.diet_calculator.module.product.model.entity.ProductEntity;
-import diet.calculator.com.example.diet_calculator.repository.ProductRepository;
+import diet.calculatorscom.example.demo.module.mapper.ProductMapper;
+import diet.calculatorscom.example.demo.module.product.model.dto.ProductDto;
+import diet.calculatorscom.example.demo.module.product.model.entity.ProductEntity;
+import diet.calculatorscom.example.demo.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
